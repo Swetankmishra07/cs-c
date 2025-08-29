@@ -1,0 +1,90 @@
+ body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  min-height: 100vh;
+}
+
+table {
+  width: 95%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+caption {
+  caption-side: top;
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2d3436;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+th, td {
+  border: 1px solid #e0e0e0;
+  padding: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+th {
+  background: #2d3436;
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+td {
+  font-size: 15px;
+}
+
+/* Day column */
+td:first-child {
+  background: #ffeaa7;
+  font-weight: bold;
+  color: #2d3436;
+}
+
+/* Break & Lunch */
+.break {
+  background: #ff7675 !important;
+  color: white;
+  font-weight: bold;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 14px;
+}
+
+.lunch {
+  background: #00b894 !important;
+  color: white;
+  font-weight: bold;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 14px;
+}
+
+/* Subjects with unique colors */
+.sub1 { background: #74b9ff; color: white; font-weight: bold; }
+.sub2 { background: #55efc4; color: #2d3436; font-weight: bold; }
+.sub3 { background: #fab1a0; color: #2d3436; font-weight: bold; }
+.sub8 { background: #fd79a8; color: white; font-weight: bold; }
+
+.fsd  { background: #6c5ce7; color: white; font-weight: bold; }
+.dsa  { background: #e17055; color: white; font-weight: bold; }
+.ai   { background: #00cec9; color: white; font-weight: bold; }
+.lab  { background: #0984e3; color: white; font-weight: bold; }
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
